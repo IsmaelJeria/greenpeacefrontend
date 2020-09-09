@@ -1,0 +1,27 @@
+<mat-grid-list cols="7">
+    <mat-grid-tile colspan="2">1</mat-grid-tile>
+    <mat-grid-tile colspan="3" rowspan="2">
+        <mat-card class="my-card" style="text-align: center;">
+            <img mat-card-image src="assets/img/greenpeacelogo.png" style="max-width:30%;">
+            <div>
+                <mat-label>Username</mat-label>
+            </div>
+            <div>
+                <input matInput placeholder="ej:Ismael" name="Username">
+            </div>
+            <div>
+                <mat-label>Password</mat-label>
+            </div>
+            <div>
+                <input matInput placeholder="ej:Password" name="password">
+            </div>
+            <section class="example-section">
+                <mat-checkbox>Remember me</mat-checkbox>
+            </section>
+            <button [routerLink]="'/register'" mat-raised-button color="primary">Create Account</button>
+            <span class="spacer"></span>
+            <button (click)="loginparams()" mat-raised-button color="primary">LOGIN</button>
+        </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile colspan="2">1</mat-grid-tile>
+</mat-grid-list>

@@ -1,0 +1,8 @@
+mat-grid-tile {
+    background: lightblue;
+}
+
+.spacer {
+    justify-content: space-between;
+    flex: 1 1 auto;
+}
